@@ -1,0 +1,32 @@
+<form action="https://getform.io/f/axowmlqb" method="POST" enctype="multipart/form-data">
+  
+  <!-- HONEYPOT : champ invisible pour bots -->
+  <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+
+  <label for="nom">Nom</label>
+  <input type="text" id="nom" name="nom" required>
+
+  <label for="prenom">Prénom</label>
+  <input type="text" id="prenom" name="prenom" required>
+
+  <label for="email">Email</label>
+  <input type="email" id="email" name="email" required>
+
+  <label for="fichier">Télécharger un ou plusieurs fichiers</label>
+  <input type="file" id="fichier" name="fichier[]" multiple required>
+
+  <label>Type de site désiré</label>
+  <div class="radio-group">
+    <label><input type="radio" name="type_site" value="vitrine" required> Vitrine</label>
+    <label><input type="radio" name="type_site" value="ecommerce" required> E-commerce</label>
+    <label><input type="radio" name="type_site" value="blog" required> Blog</label>
+  </div>
+
+  <label for="preuve">Preuve de paiement</label>
+  <input type="text" id="preuve" name="preuve" required>
+
+  <label for="message">Message</label>
+  <textarea id="message" name="message" rows="5" required></textarea>
+
+  <button type="submit">Envoyer</button>
+</form>
